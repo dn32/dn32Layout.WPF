@@ -1,0 +1,66 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dn32LayoutTeste"
+        xmlns:Controls="clr-namespace:dn32ImageButton.Controls;assembly=dn32Layout" 
+        x:Class="dn32LayoutTeste.Principal"
+        mc:Ignorable="d"
+        Title="dn32 Comércio" Icon="/dn32Layout;component/img/compras.png" 
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize" 
+        Height="335.5" 
+        Width="738">
+    <Window.Resources>
+        <ResourceDictionary Source="/dn32Layout;component/Themes/dn32ImageButton.xaml"></ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Orientation="Vertical">
+
+            <StackPanel Orientation="Horizontal">
+                <Controls:dn32ImageButton x:Name="imageButton" 
+                              Style="{DynamicResource dn32ButtonStyle}"
+                              Text="Clientes"
+                              NormalImage="/dn32Layout;component/img/clientes.png"
+                              HorizontalAlignment="Left" VerticalAlignment="Top" Height="137" Width="230"/>
+
+                <Controls:dn32ImageButton x:Name="imageButton3" 
+                              Text="Produtos"
+                              Style="{DynamicResource dn32ButtonStyle}"
+                              NormalImage="/dn32Layout;component/img/estoque.png"
+                              HorizontalAlignment="Left" VerticalAlignment="Top" Height="137" Width="230"/>
+
+                <Controls:dn32ImageButton x:Name="imageButton2" 
+                              Text="Vendas"
+                              Style="{DynamicResource dn32ButtonStyle}"
+                              NormalImage="/dn32Layout;component/img/vendas.png"
+                              HorizontalAlignment="Left" VerticalAlignment="Top" Height="137" Width="230"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+
+
+                <Controls:dn32ImageButton x:Name="imageButton5" 
+                              Text="Fornecedores"
+                              Style="{DynamicResource dn32ButtonStyle}"
+                              NormalImage="/dn32Layout;component/img/fornecedores.png"
+                              HorizontalAlignment="Left" VerticalAlignment="Top" Height="137" Width="230"/>
+
+                <Controls:dn32ImageButton x:Name="imageButtond5" 
+                              Text="Compras"
+                              Style="{DynamicResource dn32ButtonStyle}"
+                              NormalImage="/dn32Layout;component/img/compras.png"
+                              HorizontalAlignment="Left" VerticalAlignment="Top" Height="137" Width="230"/>
+
+                <Controls:dn32ImageButton x:Name="imageButton4" 
+                              Text="Usuários"
+                              Style="{DynamicResource dn32ButtonStyle}"
+                              NormalImage="/dn32Layout;component/img/usuarios.png"
+                              HorizontalAlignment="Left" VerticalAlignment="Top" Height="137" Width="230"/>
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
