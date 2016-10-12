@@ -22,6 +22,8 @@
                 <Controls:dn32ImageButton x:Name="imageButton" 
                               Style="{DynamicResource dn32ButtonStyle}"
                               Text="Clientes"
+                                          ImageSize="45"
+                                          FontSize="16"
                               NormalImage="/dn32Layout;component/img/clientes.png"
                               HorizontalAlignment="Left" VerticalAlignment="Top" Height="137" Width="230"/>
 

@@ -32,6 +32,16 @@ namespace dn32ImageButton.Controls
             DependencyProperty.Register("ImageSize", typeof(double), typeof(dn32ImageButton),
             new FrameworkPropertyMetadata(30.0, FrameworkPropertyMetadataOptions.AffectsRender));
 
+        //public double FontSize
+        //{
+        //    get { return (double)GetValue(FontSizeProperty); }
+        //    set { SetValue(FontSizeProperty, value); }
+        //}
+
+        //public static readonly DependencyProperty FontSizeProperty =
+        //    DependencyProperty.Register("FontSize", typeof(double), typeof(dn32ImageButton),
+        //    new FrameworkPropertyMetadata(18.0, FrameworkPropertyMetadataOptions.AffectsRender));
+
         public string NormalImage
         {
             get { return (string)GetValue(NormalImageProperty); }
